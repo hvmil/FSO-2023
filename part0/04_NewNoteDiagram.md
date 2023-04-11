@@ -9,7 +9,7 @@
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
 
-    Note left of server: Server adds the new note to the JSON file containing all notes.
+    Note left of server: Server adds the new note to the object containing all notes.
 
     server-->>browser: HTTP 302 Status Code: FOUND. Redirect back to notes page.
     deactivate server
